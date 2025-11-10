@@ -47,7 +47,7 @@ publishing {
         /*
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/karaden-prg/karaden-prg-java")
+            url = uri("")
             credentials {
                 username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -69,26 +69,26 @@ publishing {
             from(components["java"])
 
             pom {
-                name.set("karaden-prg/karaden-prg-java")
-                description.set("Java library for the Karaden API.")
-                url.set("https://github.com/karaden-prg/karaden-prg-java")
+                name.set("cpaas-sdks-test/cpaas-test-java")
+                description.set("release test")
+                url.set("https://github.com/cpaas-sdks-test/cpaas-test-java")
                 licenses {
                     license {
                         name.set("MIT LICENSE")
-                        url.set("https://raw.githubusercontent.com/karaden-prg/karaden-prg-java/master/LICENSE")
+                        url.set("https://raw.githubusercontent.com/cpaas-sdks-test/cpaas-test-java/master/LICENSE")
                     }
                 }
                 developers {
                     developer {
-                        id.set("cpaas-dev-admin-om")
-                        name.set("cpaas-dev-admin-om")
-                        email.set("cpaas-dev-admin-om@nttcoms.com")
+                        id.set("cpaas-sdks-test-om")
+                        name.set("cpaas-sdks-test-om")
+                        email.set("cpaas-sdks-test-om@nttcoms.com")
                     }
                 }
                 scm {
-                    connection.set("scm:git:https://github.com/karaden-prg/karaden-prg-java.git")
-                    developerConnection.set("scm:git:https://github.com/karaden-prg/karaden-prg-java.git")
-                    url.set("https://github.com/karaden-prg/karaden-prg-java")
+                    connection.set("scm:git:https://github.com/cpaas-sdks-test/cpaas-test-java.git")
+                    developerConnection.set("scm:git:https://github.com/cpaas-sdks-test/cpaas-test-java.git")
+                    url.set("https://github.com/cpaas-sdks-test/cpaas-test-java")
                 }
             }
         }
