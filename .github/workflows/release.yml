@@ -25,7 +25,7 @@ jobs:
       - name: Publish to Maven Central
         run: |
           API_BASE='https://ossrh-staging-api.central.sonatype.com/manual/upload/defaultRepository/'
-          NAMESPACE='com.cpaas_karaden'
+          NAMESPACE='com.cpaas-karaden'
           BEARER_TOKEN=$(echo -n "$MAVEN_USERNAME":"$MAVEN_PASSWORD" | base64)
 
           curl -X POST "${API_BASE}${NAMESPACE}?publishing_type=${PUBLISHING_TYPE:-automatic}" \
